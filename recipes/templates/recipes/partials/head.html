@@ -142,18 +142,28 @@
             right: 0;
         }
 
-        .search-button:focus {
+        .search-button:focus { /* When element has focus */
             outline: 1px solid var(--color-primary);
             background: rgba(0, 0, 0, .05)
         }
-
-        .search-form:focus-within {
+        
+        .search-form:focus-within { /* When element has focus */
             border-color: var(--color-primary);
             background: var(--color-white);
         }
 
-        .search-form:focus-within .search-button {
+        .search-form:focus-within .search-button { /* When element has focus */
             color: var(--color-primary);
+        }
+
+        .main-content {
+            padding-top: 0;
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large);
         }
     </style>
 </head>
